@@ -1,6 +1,7 @@
 FROM node:lts-alpine
 
-RUN apk add --no-cache wget librsvg && mkdir /tmp/downloads /tmp/storage
+RUN apk add --no-cache wget librsvg msttcorefonts-installer fontconfig && \
+    update-ms-fonts && fc-cache -f && mkdir /tmp/downloads /tmp/storage
 
 WORKDIR /app
 COPY package*.json ./
