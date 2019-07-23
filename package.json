@@ -1,0 +1,17 @@
+{
+  "name": "svg2png",
+  "author": {
+    "name": "Nea"
+  },
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "debug": "~2.6.9",
+    "execa": "^2.0.3",
+    "express": "~4.16.0",
+    "morgan": "~1.9.0"
+  }
+}
